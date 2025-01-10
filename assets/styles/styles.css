@@ -130,13 +130,21 @@ h2{
   margin-top: 0px;
   margin-bottom:0px;}
 
-  
+  .textfeld label {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 10px; 
+    height: 160px; 
+    position: relative; 
+}
 .fontSizeSlider {
   margin-top: 0px;
-  margin-bottom: 12px;
-  justify-content: center;
-  width: 20%;           
-  height: 1px;          
+  margin-bottom: 0px;
+  margin-left: 0px;
+  transform: rotate(-90deg);
+  width: 160px;           
+  height: 2px;          
   background: #42943B; 
   -webkit-appearance: none;
   border-radius: 5px; 
@@ -147,8 +155,8 @@ h2{
 .fontSizeSlider::-webkit-slider-thumb {
   -webkit-appearance: none; 
   appearance: none;         
-  width: 8px;              
-  height: 8px;             
+  width: 10px;              
+  height: 10px;             
   background: #42943B;
   outline: 1px solid #FAF9F6;      
   border-radius: 50%;       
@@ -167,6 +175,9 @@ h2{
 .textfeld{
   background-color: none;
   text-align: right;
+  display: flex;
+    align-items: center;
+    z-index: 1;
 }
 
 .textarea{
@@ -181,7 +192,7 @@ h2{
   border-top: 0px solid #42943B;
   border-left: 0px solid black;
   border-right: 0px solid black;
-  border-bottom: 2px solid #42943B;
+  border-bottom: 0px solid #42943B;
   resize: none;
   overflow: hidden;
   background-color: #FAF9F6;
