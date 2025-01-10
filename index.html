@@ -19,11 +19,11 @@
 <body>
     <header>
         <div class="überschrift">
-        <h1 class="letters">Ha<span>m</span>burger Fonts</h1> 
+            <h1 class="letters" id="dynamicHeadline">Ha<span>m</span>burger Fonts</h1>
         </div>
     </header>
     <main>
-        <h2 class="descblue">HAMURGER FONTS ist eine Typeface Library von und für Student:innen der HAW Hamburg.<br>Eine Sammlung von <span>wunderschönen, experimentellen</span> und <span>komischen</span> Schriften.<br>Diese Plattform bietet Designer:innen die Möglichkeit zum Austausch<br>und stellt Schriften für die freie Nutzung in uniinternen Projekten bereit.</h2>
+        <h2 class="descblue" id="dynamicText">HAMBURGER FONTS ist eine Typeface Library von und für Student:innen der HAW Hamburg.<br>Eine Sammlung von <span>wunderschönen, experimentellen</span> und <span>komischen</span> Schriften.<br>Diese Plattform bietet Designer:innen die Möglichkeit zum Austausch<br>und stellt Schriften für die freie Nutzung in uniinternen Projekten bereit.</h2>
         <div>
         <div>  </div>
         
@@ -54,7 +54,7 @@
 
     <div class="textfeld">
         <div class="downloadbutton1">
-            <a href="/assets/fonts/Modulaire.woff" download>↓</a>
+            <a href="/assets/fonts/Modulaire.woff" download>DOWNLOAD</a>
         </div>
         <textarea 
             class="textarea" 
@@ -81,7 +81,7 @@
 
     <div class="textfeld">
         <div class="downloadbutton1">
-            <a href="/assets/fonts/RegibilityVF.woff2" download>↓</a>
+            <a href="/assets/fonts/RegibilityVF.woff2" download>DOWNLOAD</a>
         </div>
         <textarea 
             class="textarea" 
@@ -108,7 +108,7 @@
 
     <div class="textfeld">
         <div class="downloadbutton1">
-            <a href="/assets/fonts/Milos.woff" download>↓</a>
+            <a href="/assets/fonts/Milos.woff" download>DOWNLOAD</a>
         </div>
         <textarea 
             class="textarea" 
@@ -135,7 +135,7 @@
 
     <div class="textfeld">
         <div class="downloadbutton1">
-            <a href="/assets/fonts/überwolken.woff2" download>↓</a>
+            <a href="/assets/fonts/überwolken.woff2" download>DOWNLOAD</a>
         </div>
         <textarea 
             class="textarea" 
@@ -162,7 +162,7 @@
 
     <div class="textfeld">
         <div class="downloadbutton1">
-            <a href="/assets/fonts/DataVisualizer-Regular.ttf" download>↓</a>
+            <a href="/assets/fonts/DataVisualizer-Regular.ttf" download>DOWNLOAD</a>
         </div>
         <textarea 
             class="textarea" 
@@ -189,7 +189,7 @@
 
     <div class="textfeld">
         <div class="downloadbutton1">
-            <a href="/assets/fonts/1234567-Regular.otf" download>↓</a>
+            <a href="/assets/fonts/1234567-Regular.otf" download>DOWNLOAD</a>
         </div>
         <textarea 
             class="textarea" 
@@ -216,7 +216,7 @@
 
     <div class="textfeld">
         <div class="downloadbutton1">
-            <a href="/assets/fonts/HelveticaSingleLine-Regular.otf" download>↓</a>
+            <a href="/assets/fonts/HelveticaSingleLine-Regular.otf" download>DOWNLOAD</a>
         </div>
         <textarea 
             class="textarea" 
@@ -231,7 +231,7 @@
 </main>
     
 </body>
--->
+
 
 
 
@@ -355,8 +355,39 @@ document.getElementById('sendEmailButton').addEventListener('click', function ()
     window.location.href = mailtoLink;
 });
 </script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    // Dynamisch generierte Liste von Schriftarten aus Jekyll
+    const fonts = [
+        
+            "Modulaire",
+        
+            "Regibility VF",
+        
+            "Milos",
+        
+            "überwolken",
+        
+            "DataVisualizer",
+        
+            "1234567",
+        
+            "Helvetica-SingleLine"
+        
+    ];
 
- </div>
+    // Funktion, um eine zufällige Schriftart auszuwählen
+    const getRandomFont = () => fonts[Math.floor(Math.random() * fonts.length)];
+
+    // Zufällige Schriftart für die Überschrift
+    const headline = document.getElementById('dynamicHeadline');
+    headline.style.fontFamily = getRandomFont();
+
+    // Zufällige Schriftart für den Beschreibungstext
+    const text = document.getElementById('dynamicText');
+    text.style.fontFamily = getRandomFont();
+});
+</script> </div>
         
     </div>
     </main>

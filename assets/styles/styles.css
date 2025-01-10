@@ -76,7 +76,7 @@ padding-bottom: 0px;
   padding-top: 0px;
   padding-bottom: 0px;
 }
-
+#42943B
 .content{
   
   margin: 0px;
@@ -164,18 +164,33 @@ h2{
   z-index: 1000;         
 }
 
+
+
 .downloadbutton1 {
-  width: 20px;
-  height:100%;
-  background-color:#42943B;
-  color: #FAF9F6;
-  border-radius: 5%;
-
-  text-decoration: none;
-
-
+  font-family: "Akira";
+  font-size: 14px;
+  margin-right: 10px;
+  margin-top: -10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+  background-color: none;
+  color: #42943B;
+  border: none;
+  border-radius: 0%;
+  cursor: pointer;
+  z-index: 1000;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(-180deg);
 }
 
+.downloadbutton1 a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+}
 
 .divider{
   width:100%;
