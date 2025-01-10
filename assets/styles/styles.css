@@ -22,10 +22,10 @@ body {
   top: 10px;
   right: 10px;
   z-index: 1000;
-  padding-top: 2px;
-  padding-bottom: 3px;
-  padding-right: 13px;
-  padding-left: 13px;
+  padding-top: 1px;
+  padding-bottom: 0px;
+  padding-right: 10px;
+  padding-left: 10px;
   background-color: #42943B;
   color: #FAF9F6;
   border: none;
