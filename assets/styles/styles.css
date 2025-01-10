@@ -164,6 +164,19 @@ h2{
   z-index: 1000;         
 }
 
+.downloadbutton1 {
+  width: 20px;
+  height:100%;
+  background-color:#42943B;
+  color: #FAF9F6;
+  border-radius: 5%;
+
+  text-decoration: none;
+
+
+}
+
+
 .divider{
   width:100%;
   height:2px;
