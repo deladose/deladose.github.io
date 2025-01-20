@@ -56,3 +56,8 @@
   font-family: "Blockfont";
   src: url(/assets/fonts/Blockfont.ttf) format("truetype");
 }
+
+@font-face {
+  font-family: "Kandieshop";
+  src: url(/assets/fonts/NeueSchrift-Regular_Luca.otf) format("opentype");
+}

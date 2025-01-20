@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +9,16 @@
     <link rel="stylesheet" href="/assets/styles/fonts.css">
     <script src="/assets/js/scripts.js"></script>
 </head>
+
+<style>
+    @font-face {
+        font-family: '';
+        src: url('') format('woff'),
+             url('') format('truetype'),
+             url('') format('opentype');
+    }
+</style>
+
 <body>
     <div class="content">
     <header>
@@ -15,12 +26,7 @@
     </header>
     <main>
         <div>
-        <style>
-            @font-face {
-                font-family: "Akira";
-                src: url(/assets/fonts/AkiraExpandedDemo.otf) format("opentype");
-            }
-        </style>
+       
 
 <button id="themeToggleButton">
     ◐
@@ -44,12 +50,12 @@ style="font-family: '';">STANLEY KUBRICK WAS AN AMERICAN FILM DIRECTOR, SCREENWR
         <br>
         <br>
         <div class="beschreibung">
-            <div class="div1">Modulaire made by Aisha-Lu Grosche</div>
+            <div class="div1"><u>Modulaire</u> made by <u>Aisha-Lu Grosche</u></div>
             <div class="div2">Erstellt am 18/12/2024</div>
-            <div class="div3"> <a href="https://www.instagram.com/stabilulu/">https://www.instagram.com/stabilulu/</a></div>
-            <div class="div4">SSM 2024 - Type Design Kurs </div>
+            <div class="div3">SSM 2024 - Type Design Kurs </div>
+            <div> <a href="https://www.instagram.com/stabilulu/" class="div4">https://www.instagram.com/stabilulu/</a></div>
             <div class="div5">
-                <a href="/assets/fonts/Modulaire.woff" download>Download Modulaire</a>
+                <a href="/assets/fonts/Modulaire.woff" class="div5" download>Download Modulaire</a>
             </div>
             <div class="div6">STANLEY KUBRICK WAS AN AMERICAN FILM DIRECTOR, SCREENWRITER, AND PRODUCER. HE IS BEST KNOWN FOR HIS NUMBER OF ACCLAIMED AND OFTEN CONTROVERSIAL FILMS SUCH AS A CLOCKWORK ORANGE, THE SHINING, DR. STRANGELOVE AND HIS FINAL FILM, EYES WIDE SHUT WITH THEN MARRIED TOM CRUISE AND NICOLE KIDMAN.</div>
         </div>
@@ -221,3 +227,12 @@ document.getElementById('sendEmailButton').addEventListener('click', function ()
     window.location.href = mailtoLink;
 });
 </script>
+
+<script>
+    document.querySelectorAll('.fontSizeSlider').forEach(slider => {
+        slider.addEventListener('input', (event) => {
+            const textarea = event.target.closest('.textfeld').querySelector('.textarea');
+            textarea.style.fontSize = event.target.value + 'px'; // Setzt die Schriftgröße der zugehörigen Textarea
+        });
+    });
+    </script>

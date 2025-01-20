@@ -1,26 +1,32 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>überwolken | Type Library</title>
+    <title>ueberwolken | Type Library</title>
     <link rel="stylesheet" href="/assets/styles/styles.css">
     <link rel="stylesheet" href="/assets/styles/fonts.css">
     <script src="/assets/js/scripts.js"></script>
 </head>
+
+<style>
+    @font-face {
+        font-family: '';
+        src: url('') format('woff'),
+             url('') format('truetype'),
+             url('') format('opentype');
+    }
+</style>
+
 <body>
     <div class="content">
     <header>
-        <div class="fonth1">überwolken</div>
+        <div class="fonth1">ueberwolken</div>
     </header>
     <main>
         <div>
-        <style>
-            @font-face {
-                font-family: "Akira";
-                src: url(/assets/fonts/AkiraExpandedDemo.otf) format("opentype");
-            }
-        </style>
+       
 
 <button id="themeToggleButton">
     ◐
@@ -33,7 +39,7 @@
 
 <textarea 
 class="textarea-lonely" 
-style="font-family: '';">asciasstciasstcccsacasnssccucbstciasstcccsacasnssccucbstciasstcccsacasnssccucbstciasstcccsacasnssccucbstciasstcccsacasnssccucbstciasstcccsacasnssccucbstciasstcccsacasnssccucbsasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasas
+style="font-family: '';">ascia sstciasstcccsac asnssc cucbstcia sstcccsaca snssccu cbstciass tcccsacasns sccucbstciasst cccsacasn ssccucbs tciasstcc csacasnsscc ucbstciasstccc sacasnssccucbstc iasstcccsacasnss ccu cbs asasa sasasasa sasasasasas asasas asasasasa sasasa sasasa sasasas asasasasasasasasasas
 </textarea>
     <label>
         <input type="range" class="fontSizeSlider" min="12" max="110" value="65">
@@ -44,14 +50,14 @@ style="font-family: '';">asciasstciasstcccsacasnssccucbstciasstcccsacasnssccucbs
         <br>
         <br>
         <div class="beschreibung">
-            <div class="div1">überwolken made by Jule Jeschke</div>
+            <div class="div1"><u>ueberwolken</u> made by <u>Jule Jeschke</u></div>
             <div class="div2">Erstellt am 18/12/2024</div>
-            <div class="div3"> <a href="https://www.instagram.com/julejeschke/">https://www.instagram.com/julejeschke/</a></div>
-            <div class="div4">SSM 2024 - Type Design Kurs </div>
+            <div class="div3">SSM 2024 - Type Design Kurs </div>
+            <div> <a href="https://www.instagram.com/julejeschke/" class="div4">https://www.instagram.com/julejeschke/</a></div>
             <div class="div5">
-                <a href="/assets/fonts/überwolken.woff2" download>Download überwolken</a>
+                <a href="/assets/fonts/überwolken.woff2" class="div5" download>Download ueberwolken</a>
             </div>
-            <div class="div6">asciasstciasstcccsacasnssccucbstciasstcccsacasnssccucbstciasstcccsacasnssccucbstciasstcccsacasnssccucbstciasstcccsacasnssccucbstciasstcccsacasnssccucbstciasstcccsacasnssccucbsasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasas</div>
+            <div class="div6">ascia sstciasstcccsac asnssc cucbstcia sstcccsaca snssccu cbstciass tcccsacasns sccucbstciasst cccsacasn ssccucbs tciasstcc csacasnsscc ucbstciasstccc sacasnssccucbstc iasstcccsacasnss ccu cbs asasa sasasasa sasasasasas asasas asasasasa sasasa sasasa sasasas asasasasasasasasasas</div>
         </div>
         <br>
         <br>
@@ -221,3 +227,12 @@ document.getElementById('sendEmailButton').addEventListener('click', function ()
     window.location.href = mailtoLink;
 });
 </script>
+
+<script>
+    document.querySelectorAll('.fontSizeSlider').forEach(slider => {
+        slider.addEventListener('input', (event) => {
+            const textarea = event.target.closest('.textfeld').querySelector('.textarea');
+            textarea.style.fontSize = event.target.value + 'px'; // Setzt die Schriftgröße der zugehörigen Textarea
+        });
+    });
+    </script>

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +9,16 @@
     <link rel="stylesheet" href="/assets/styles/fonts.css">
     <script src="/assets/js/scripts.js"></script>
 </head>
+
+<style>
+    @font-face {
+        font-family: '';
+        src: url('') format('woff'),
+             url('') format('truetype'),
+             url('') format('opentype');
+    }
+</style>
+
 <body>
     <div class="content">
     <header>
@@ -15,12 +26,7 @@
     </header>
     <main>
         <div>
-        <style>
-            @font-face {
-                font-family: "Akira";
-                src: url(/assets/fonts/AkiraExpandedDemo.otf) format("opentype");
-            }
-        </style>
+       
 
 <button id="themeToggleButton">
     ◐
@@ -33,7 +39,7 @@
 
 <textarea 
 class="textarea-lonely" 
-style="font-family: '';">1.1112223345556667e+43
+style="font-family: '';">11112223 345556666 77000043111988 8899989899899
 </textarea>
     <label>
         <input type="range" class="fontSizeSlider" min="12" max="110" value="65">
@@ -44,14 +50,14 @@ style="font-family: '';">1.1112223345556667e+43
         <br>
         <br>
         <div class="beschreibung">
-            <div class="div1">1234567 made by Alexander Derlaporte</div>
+            <div class="div1"><u>1234567</u> made by <u>Alexander Delaporte</u></div>
             <div class="div2">Erstellt am 18/12/2024</div>
-            <div class="div3"> <a href="https://www.instagram.com/alexdeladose/">https://www.instagram.com/alexdeladose/</a></div>
-            <div class="div4">FieldRecording Glyphs </div>
+            <div class="div3">FieldRecording Glyphs </div>
+            <div> <a href="https://www.instagram.com/alexdeladose/" class="div4">https://www.instagram.com/alexdeladose/</a></div>
             <div class="div5">
-                <a href="/assets/fonts/1234567-Regular.otf" download>Download 1234567</a>
+                <a href="/assets/fonts/1234567-Regular.otf" class="div5" download>Download 1234567</a>
             </div>
-            <div class="div6">1.1112223345556667e+43</div>
+            <div class="div6">11112223 345556666 77000043111988 8899989899899</div>
         </div>
         <br>
         <br>
@@ -221,3 +227,12 @@ document.getElementById('sendEmailButton').addEventListener('click', function ()
     window.location.href = mailtoLink;
 });
 </script>
+
+<script>
+    document.querySelectorAll('.fontSizeSlider').forEach(slider => {
+        slider.addEventListener('input', (event) => {
+            const textarea = event.target.closest('.textfeld').querySelector('.textarea');
+            textarea.style.fontSize = event.target.value + 'px'; // Setzt die Schriftgröße der zugehörigen Textarea
+        });
+    });
+    </script>
